@@ -1,0 +1,61 @@
+.btn {
+    width: 50px !important;
+    height: 80px;
+    color: rgba(0,0,0,0.87);
+    background-color:#eee;
+    margin: 6px 0 0 6px;    
+}
+
+.btn:hover {
+    color:white;
+}
+
+.ico {
+    font-size: 3em;
+    margin-top: 10px;
+}
+
+.subBtn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.textBtn {
+    margin-top: -5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.titulo {color: grey;
+    margin-bottom: 5px;
+}
+
+
+.mat-menu-panel {
+    max-width: 300px !important;
+}
+
+.color1 {
+    border-bottom:1px solid #4C8EF4;
+}
+.color1:hover {
+    background: #4C8EF4;
+}
+
+.color2 {
+    border-bottom:1px solid #e10068;
+}
+.color2:hover {
+    background: #e10068;
+}
+.color3:hover {
+    background: #9a00b1;
+}
+
+.mat-menu-panel.notifications-dropdown {
+width: 300px;
+max-width: 300px;
+}

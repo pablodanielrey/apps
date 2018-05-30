@@ -1,8 +1,44 @@
 <button mat-icon-button [matMenuTriggerFor]="menu">
-  <mat-icon>more_vert</mat-icon>
+  <mat-icon>apps </mat-icon>
 </button>
 <mat-menu #menu="matMenu">
-  <button mat-menu-item>
+    <div class="titulo">Aplicaciones FCE</div>
+    
+    <button  class="btn color1" mat-button>
+      <div class="subBtn">
+          <i class="material-icons ico">alarm</i>
+          <span class="textBtn">Asistencia</span>
+      </div>
+    </button>
+    <button  class="btn color2" mat-button>
+      <div class="subBtn">
+          <i class="material-icons ico">mail_outline</i>
+          <span class="textBtn">Correo</span>
+      </div>
+    </button>
+     <button  class="btn color3" mat-button>
+         <div class="subBtn">
+            <i class="material-icons ico">cloud_queue </i>
+            <span class="textBtn">Drive</span>
+          </div>
+      </button>
+      <button  class="btn color2" mat-button>
+          <div class="subBtn">
+              <i class="material-icons ico">mail_outline</i>
+              <span class="textBtn">Correo</span>
+          </div>
+        </button>
+      <button  class="btn color3" mat-button>
+          <div class="subBtn">
+              <i class="material-icons ico">cloud_queue </i>
+              <span class="textBtn">Drive</span>
+            </div>
+      </button>
+
+    
+
+
+  <!-- <button mat-menu-item>
     <mat-icon>dialpad</mat-icon>
     <span>Redial</span>
   </button>
@@ -13,5 +49,5 @@
   <button mat-menu-item>
     <mat-icon>notifications_off</mat-icon>
     <span>Disable alerts</span>
-  </button>
+  </button> -->
 </mat-menu>
