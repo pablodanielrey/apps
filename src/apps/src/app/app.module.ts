@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { PantallaPrincipalComponent } from './pantalla-principal/pantalla-principal.component';
 import { AppMenuModule } from './app-menu/app-menu.module';
+import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AppMenuModule } from './app-menu/app-menu.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AppMenuModule
+    AppMenuModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
