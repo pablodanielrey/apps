@@ -1,5 +1,5 @@
-import { Component,ViewEncapsulation, OnInit } from '@angular/core';
-
+import { Component,ViewEncapsulation, OnInit, Input } from '@angular/core';
+import { Aplicacion } from '../aplicacion'
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -8,9 +8,13 @@ import { Component,ViewEncapsulation, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  @Input()
+  items: Array<Aplicacion> = new Array<Aplicacion>();
+
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

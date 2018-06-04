@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PantallaPrincipalComponent implements OnInit {
 
+
+
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
