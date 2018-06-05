@@ -21,5 +21,7 @@ export class AppComponent {
     this.items.push(new Aplicacion('Digesto','http://www.ditesi.econo.unlp.edu.ar/wp/wp-content/uploads/digesto.png','http://digesto.econo.unlp.edu.ar/norma/'));
     this.items.push(new Aplicacion('Concursos','http://www.ditesi.econo.unlp.edu.ar/wp/wp-content/uploads/concurso.png','http://concursos.econo.unlp.edu.ar'));
     this.items.push(new Aplicacion('Adscriptos','http://www.ditesi.econo.unlp.edu.ar/wp/wp-content/uploads/adscriptos.png','http://adscriptos.econo.unlp.edu.ar'));
+    this.items.push(new Aplicacion('SIU Guaraní','http://www.ditesi.econo.unlp.edu.ar/wp/wp-content/uploads/siu_guarani.png','https://www.guarani-economicas.unlp.edu.ar'));
+    this.items.push(new Aplicacion('Recibos','http://www.ditesi.econo.unlp.edu.ar/wp/wp-content/uploads/RECIBOS.png','https://recibos.unlp.edu.ar'));
   }
 }

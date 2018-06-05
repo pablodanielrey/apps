@@ -23,16 +23,28 @@
     font-size: 12px;
 }
 
-.titulo {color: grey;
-    margin-left: 10px;
-    font-size: 14px;
+.titulo {
+  color: #565656;
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
     margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.btnMasAplicaciones {
+  width: 100%;
+  background-color: #eee;
+  color: #565656;
+  margin-top: 10px !important;
 }
 
 
 .mat-menu-content {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
 
 .mat-menu-panel {
-    padding: 5px;
-}
+    /* padding: 5px; */
+  }
