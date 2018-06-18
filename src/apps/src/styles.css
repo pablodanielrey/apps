@@ -3,4 +3,16 @@
 
 body {
   font-family: Roboto,"Helvetica Neue",sans-serif;
+  height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pantalla {
+  height: 100%;
 }

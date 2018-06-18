@@ -1,7 +1,127 @@
-<mat-toolbar-row>
-    <span>Third Line</span>
-    <span class="example-spacer"></span>
-    <mat-icon class="example-icon">favorite</mat-icon>
-    <mat-icon class="example-icon">delete</mat-icon>
-</mat-toolbar-row>
+<div class="fce">
 
+<mat-toolbar class="cabecera">
+    <div><span>FCE</span></div>
+    <div>
+        <button class="btnFullScreen" mat-icon-button>
+            <mat-icon>aspect_ratio</mat-icon>
+        </button>
+          <button mat-button [matMenuTriggerFor]="menu">
+          <mat-icon>account_circle</mat-icon>
+          <span class="nombreUsuario">Walter Blanco</span>
+          <mat-icon>arrow_drop_down</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item><mat-icon>portrait</mat-icon> Mi Perfil</button>
+          <button mat-menu-item><mat-icon>lock_outline</mat-icon> Cambiar Clave</button>
+          <button mat-menu-item><mat-icon>exit_to_app</mat-icon> Salir</button>
+        </mat-menu>
+    </div>
+</mat-toolbar>
+
+<div class="contenido">
+
+    <div class="contenedorApps">
+
+        <button  class="btn" mat-button>
+          <div class="subBtn">
+            <img class="logoSistema" src="http://www.ditesi.econo.unlp.edu.ar/wp/wp-content/uploads/usuarios.png">
+            <span class="textBtn">Usuarios</span>
+          </div>
+        </button>
+        <button  class="btn" mat-button>
+          <div class="subBtn">
+            <img class="logoSistema" src="http://www.ditesi.econo.unlp.edu.ar/wp/wp-content/uploads/gmail.png"  height="60" width="60">
+            <span class="textBtn">Correo</span>
+          </div>
+        </button>
+        <button  class="btn" mat-button>
+          <div class="subBtn">
+            <img class="logoSistema" src="http://www.ditesi.econo.unlp.edu.ar/wp/wp-content/uploads/drive.png"  height="60" width="60">
+            <span class="textBtn">Drive</span>
+          </div>
+        </button>
+        <button  class="btn" mat-button>
+          <div class="subBtn">
+            <img class="logoSistema" src="http://www.ditesi.econo.unlp.edu.ar/wp/wp-content/uploads/gelis.png"  height="60" width="60">
+            <span class="textBtn">Gelis</span>
+          </div>
+        </button>
+        <button  class="btn" mat-button>
+          <div class="subBtn">
+            <img class="logoSistema" src="http://www.ditesi.econo.unlp.edu.ar/wp/wp-content/uploads/au24.png"  height="60" width="60">
+            <span class="textBtn">AU24</span>
+          </div>
+        </button>
+        <button  class="btn" mat-button>
+          <div class="subBtn">
+            <img class="logoSistema" src="http://www.ditesi.econo.unlp.edu.ar/wp/wp-content/uploads/asistencia.png"  height="60" width="60">
+            <span class="textBtn">Asistencia</span>
+          </div>
+        </button>
+        <button  class="btn" mat-button>
+          <div class="subBtn">
+            <img class="logoSistema" src="http://www.ditesi.econo.unlp.edu.ar/wp/wp-content/uploads/insercion.png"  height="60" width="60">
+            <span class="textBtn">I. Laboral</span>
+          </div>
+        </button>
+        <button  class="btn" mat-button>
+          <div class="subBtn">
+            <img class="logoSistema" src="http://www.ditesi.econo.unlp.edu.ar/wp/wp-content/uploads/digesto.png"  height="60" width="60">
+            <span class="textBtn">Digesto</span>
+          </div>
+        </button>
+        <button  class="btn" mat-button>
+          <div class="subBtn">
+            <img class="logoSistema" src="http://www.ditesi.econo.unlp.edu.ar/wp/wp-content/uploads/concurso.png"  height="60" width="60">
+            <span class="textBtn">Concurso</span>
+          </div>
+        </button>
+        <button  class="btn" mat-button>
+          <div class="subBtn">
+            <img class="logoSistema" src="http://www.ditesi.econo.unlp.edu.ar/wp/wp-content/uploads/adscriptos.png"  height="60" width="60">
+            <span class="textBtn">Adscriptos</span>
+          </div>
+        </button>
+        <button  class="btn" mat-button>
+          <div class="subBtn">
+            <img class="logoSistema" src="http://www.ditesi.econo.unlp.edu.ar/wp/wp-content/uploads/siu_guarani.png"  height="60" width="60">
+            <span class="textBtn">SIU Guaraní</span>
+          </div>
+        </button>
+        <button  class="btn" mat-button>
+          <div class="subBtn">
+            <img class="logoSistema" src="http://www.ditesi.econo.unlp.edu.ar/wp/wp-content/uploads/RECIBOS.png"  height="60" width="60">
+            <span class="textBtn">Recibos</span>
+          </div>
+        </button>
+        <button  class="btn" mat-button>
+          <div class="subBtn">
+            <img class="logoSistema" src="http://www.ditesi.econo.unlp.edu.ar/wp/wp-content/uploads/meran.png"  height="60" width="60">
+            <span class="textBtn">Meran</span>
+          </div>
+        </button>
+
+    </div>
+
+    <div class="footer">
+        <div class="contenidoFooter">
+          <div class="bloqueFooter">
+            <div class="textDitesi">DiTeSI</div>
+            <div class="textDitesiCompleto">Dirección de Tecnología y Sistemas Informáticos</div>
+          </div>
+          <div class="bloqueFooter">
+            <div class="textContacto"><i class="material-icons iconosContacto">mail_outline</i>ditesi@econo.unlp.edu.ar</div>
+            <div class="textContacto"><i class="material-icons iconosContacto">phone</i>+54 (0221) 4236769 Interno 123</div>
+            <div class="textContacto"><i class="material-icons iconosContacto">place</i>Calle 6 Nº 777 | 1º subsuelo</div>
+          </div>
+          <div class="bloqueFooter"><img src="/assets/img/logo_fce.png" height="" width=""></div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+</div>
