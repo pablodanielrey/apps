@@ -1,0 +1,46 @@
+<div class="login">
+
+    <mat-toolbar class="cabecera">
+        <div><span>FCE | Login</span></div>
+    </mat-toolbar>
+
+    <div class="contenido">
+        <div class="contenedorTitulo">
+            <div>Iniciar sesión</div>
+        </div>
+        <div class="contenedorLogin">
+            <form class="formulario">
+                <mat-form-field class="example-full-width">
+                  <mat-icon class="iconoFormulario" matPrefix>person</mat-icon>
+                  <input class="itemInput" matInput placeholder="Usuario">
+                  <mat-error> nombre de usuario incorrecto</mat-error>
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                  <mat-icon class="iconoFormulario" matPrefix>lock</mat-icon>
+                  <input type="password" matInput placeholder="Contraseña">
+                  <mat-icon class="iconoVerContrasena" matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+                  <mat-error> contraseña incorrecta</mat-error>
+                </mat-form-field>
+                <div class="contenedorBtnAcceder">
+                    <button class="btnAcceder" mat-raised-button>ACCEDER</button>
+                </div>
+                <mat-checkbox class="checkboxRecordar">Recordar contraseña</mat-checkbox>
+            </form>
+            <div class="contenedorAyuda">
+                <div><a href="https://usuarios.econo.unlp.edu.ar/reset_clave" target="_blank">Olvidé mi contraseña</a></div>
+                <div><a href="" target="_blank">Ayuda y preguntas frecuentes</a></div>
+            </div>
+        </div>
+
+        <div class="logoFCE">
+            <img class="imgLogo" src="/assets/img/logo_fce.png" height="" width="">
+        </div>
+
+    </div>
+
+    <div class="footer">
+      <div class="footerMini">DiTeSI | Dirección de Tecnologías y Sistemas Informáticos | FCE - UNLP</div>
+      <div class="footerFull">DiTeSI | Dirección de Tecnologías y Sistemas Informáticos | Facultad de Ciencias Económicas | UNLP | Calle 6 Nº 777</div>
+    </div>
+
+</div>

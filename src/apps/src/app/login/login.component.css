@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.login {
+  display: flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  height: 100%;
+}
+
+.cabecera {
+  display: flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  color: white;
+  background-color: #3B4248;
+  font-size: 16px;
+}
+
+
+
+
+.contenido {
+  height: 100%;
+background: #4c8df3;
+background: -moz-linear-gradient(top, #4c8df3 35%, #eee 35%);
+background: -webkit-linear-gradient(top, #4c8df3 35%,#eee 35%);
+background: linear-gradient(to bottom, #4c8df3 35%,#eee 35%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c8df3', endColorstr='#eee',GradientType=0 );
+}
+
+.contenedorTitulo {
+  max-width: 400px;
+  margin: 0px auto;
+  margin-top: 50px;
+  color: rgba(255, 255, 255, 0.9);
+  /* text-align: center; */
+  margin-bottom: 20px;
+}
+
+.contenedorLogin {
+  background-color: white;
+  max-width: 400px;
+  margin: 0px auto;
+  padding: 20px;
+  -webkit-box-shadow: -1px 8px 32px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 8px 32px -5px rgba(0,0,0,0.75);
+  box-shadow: -1px 8px 32px -5px rgba(0,0,0,0.75);
+}
+
+.formulario {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.inputFormulario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.iconoFormulario {
+  color: #a3a3a3;
+  margin-right: 10px;
+}
+
+.iconoVerContrasena {
+  color: grey;
+  cursor: pointer;
+}
+
+.btnAcceder {
+  width: 100%;
+  background: #4c8df3;
+  color: white;
+  padding: 10px !important;
+  margin-top: 5px;
+  margin-bottom: 10px !important;
+}
+
+.checkboxRecordar {
+  font-size: 14px;
+  color: grey;
+}
+
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background: #4c8df3;
+}
+
+.mat-input-element {
+    caret-color: #4c8df3;
+}
+
+.mat-input-element {
+    font-size: 25px !important;
+}
+
+.contenedorAyuda {
+  margin-top: 40px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  color: grey;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #3E444A;
+  height: 20px;
+  color: #eee;
+  font-size: 10px;
+  padding-left: 10px;
+}
+
+
+.logoFCE {
+  width: 200px;
+  margin: 0px auto;
+  margin-top:40px;
+
+}
+.imgLogo {
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+max-width: 200px;
+}
+
+.footerMini {
+  display: none;
+}
+
+
+
+@media screen and (min-width: 1600px) {
+  .contenedorLogin {
+    max-width: 550px;
+    padding: 40px;
+  }
+  .contenedorTitulo {
+    max-width: 550px;
+    font-size: 20px;
+  }
+  .btnAcceder {
+    padding: 15px !important;
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+    font-size: 20px;
+  }
+  .mat-input-element {
+      font-size: 30px !important;
+  }
+  .iconoFormulario {
+    margin-right: 20px;
+    font-size: 30px !important;
+  }
+  .checkboxRecordar {
+    font-size: 16px;
+  }
+
+  a {
+    font-size: 16px;
+  }
+
+  .contenedorAyuda {
+    margin-top: 80px;
+  }
+
+  .logoFCE {
+    width: 300px;
+    margin-top:60px;
+
+  }
+  .imgLogo {
+  max-width: 300px;
+  }
+
+  .mat-input-placeholder {
+    color: #fff;
+    font-size:3em !important;
+}
+
+  .footerMini {
+    display: none;
+  }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .contenedorTitulo {
+      display: none;
+  }
+
+  .contenedorLogin {
+    width: 100%;
+    padding: 20px;
+
+        -webkit-box-shadow: -1px 3px 10px -5px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 3px 10px -5px rgba(0,0,0,0.75);
+        box-shadow: -1px 3px 10px -5px rgba(0,0,0,0.75);
+  }
+
+  .contenido {
+    background: white;
+  }
+
+  .contenedorAyuda {
+    margin-top: 20px;
+  }
+
+  .logoFCE {
+    width: 200px;
+    margin: 0px auto;
+    margin-top:40px;
+
+  }
+  .imgLogo {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  max-width: 200px;
+  }
+
+  .footerFull {
+    display: none;
+
+  }
+  .footerMini {
+    display: block;
+  }
+
+
+
+}
