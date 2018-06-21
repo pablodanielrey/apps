@@ -75,6 +75,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c8df3', end
   display: flex;
   flex-direction: row;
   align-items: center;
+
 }
 
 .iconoFormulario {
@@ -108,11 +109,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c8df3', end
 
 .mat-input-element {
     caret-color: #4c8df3;
+    font-size: 25px !important;
+
 }
 
-.mat-input-element {
-    font-size: 25px !important;
-}
+
+
 
 .contenedorAyuda {
   margin-top: 40px;
@@ -153,6 +155,10 @@ max-width: 200px;
 }
 
 
+.itemInput::placeholder {
+  color: red !important;
+}
+
 
 @media screen and (min-width: 1600px) {
   .contenedorLogin {
@@ -179,6 +185,10 @@ max-width: 200px;
   .checkboxRecordar {
     font-size: 16px;
   }
+
+  mat-form-field.mat-form-field {
+  font-size: 22px;
+}
 
   a {
     font-size: 16px;
