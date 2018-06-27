@@ -8,6 +8,7 @@ import { Aplicacion } from '../aplicacion';
   templateUrl: './pantalla-principal.component.html',
   styleUrls: ['./pantalla-principal.component.css']
 })
+
 export class PantallaPrincipalComponent implements OnInit {
 
   items: Array<Aplicacion> = [];

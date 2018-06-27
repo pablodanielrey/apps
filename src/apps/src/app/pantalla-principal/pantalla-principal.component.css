@@ -1,41 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.fce {
-  display: flex;
-  display: -moz-flex;
-  display: -webkit-flex;
-  flex-direction: column;
-  -moz-flex-direction: column;
-  -webkit-flex-direction: column;
-  justify-content: space-around;
-  -webkit-justify-content: space-around;
-  -moz-justify-content: space-around;
-  height: 100%;
-}
-
-.cabecera {
-  display: flex;
-  display: -moz-flex;
-  display: -webkit-flex;
-  justify-content: space-between;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  color: white;
-  background-color: #3B4248;
-}
-
-.btnFullScreen {
-  color: rgba(255,255,255,.5);
-}
-
-.nombreUsuario {
-  margin-left: 5px;
-}
 
 .contenido {
   height: 100%;
@@ -94,61 +56,7 @@
   font-size: 13px;
 }
 
-.footer {
-  width: 100%;
-  background-color: #eee;
-  padding-bottom: 40px;
-}
 
-.contenidoFooter {
-  padding-top: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  -moz-justify-content: space-around;
-  -webkit-justify-content: space-around;
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.bloqueFooter {
-  width: 33%;
-}
-
-.contenidoFooter a {
-  text-decoration: none;
-  font-size: 14px;
-  color: #3E444A;
-}
-
-.textDitesi {
-  font-size: 23px;
-  font-weight: 100;
-}
-
-.textDitesiCompleto {
-  font-size: 16px;
-  margin-bottom: 5px;
-  color: #3E444A;
-  font-weight: 100;
-
-}
-
-.textContacto {
-
- font-size: 14px;
-  font-weight: 100;
-}
-
-.iconosContacto {
-  text-align: center;
-  color: grey;
-  font-size: 16px;
-  margin-right: 5px;
-  font-weight: 200;
-
-}
 
 @media screen and (min-width: 1600px) {
   .contenedorApps {

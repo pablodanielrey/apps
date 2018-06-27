@@ -1,26 +1,5 @@
-<div class="fce">
-
-<mat-toolbar class="cabecera">
-    <div><span>FCE</span></div>
-    <div>
-        <button class="btnFullScreen" mat-icon-button>
-            <mat-icon>aspect_ratio</mat-icon>
-        </button>
-          <button mat-button [matMenuTriggerFor]="menu">
-          <mat-icon>account_circle</mat-icon>
-          <span class="nombreUsuario">Walter Blanco</span>
-          <mat-icon>arrow_drop_down</mat-icon>
-        </button>
-        <mat-menu #menu="matMenu">
-          <button mat-menu-item><mat-icon>portrait</mat-icon> Mi Perfil</button>
-          <button mat-menu-item><mat-icon>lock_outline</mat-icon> Cambiar Clave</button>
-          <button mat-menu-item><mat-icon>exit_to_app</mat-icon> Salir</button>
-        </mat-menu>
-    </div>
-</mat-toolbar>
 
 <div class="contenido">
-
     <div class="contenedorApps">
       <button  class="btn" mat-button *ngFor="let item of items">
         <div class="subBtn" (click)='abrir(item)'>
@@ -29,25 +8,5 @@
         </div>
       </button>
     </div>
-
-    <div class="footer">
-        <div class="contenidoFooter">
-          <div class="bloqueFooter">
-            <div class="textDitesi">DiTeSI</div>
-            <div class="textDitesiCompleto">Dirección de Tecnología y Sistemas Informáticos</div>
-          </div>
-          <div class="bloqueFooter">
-            <div class="textContacto"><i class="material-icons iconosContacto">mail_outline</i>ditesi@econo.unlp.edu.ar</div>
-            <div class="textContacto"><i class="material-icons iconosContacto">phone</i>+54 (0221) 4236769 Interno 123</div>
-            <div class="textContacto"><i class="material-icons iconosContacto">place</i>Calle 6 Nº 777 | 1º subsuelo</div>
-          </div>
-          <div class="bloqueFooter"><img src="/assets/img/logo_fce.png" height="" width=""></div>
-        </div>
-
-    </div>
-
-</div>
-
-
 
 </div>
