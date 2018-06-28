@@ -12,4 +12,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  salir():void {
+    // this.oauthService.logOut();
+   console.log("salir");
+  }
 }

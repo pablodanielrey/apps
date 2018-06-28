@@ -13,6 +13,6 @@ export class AppComponent {
   }
 
   private configureWithNewConfigApi() {
-    this.router.navigate(['/sistema/inicial']);
+    // this.router.navigate(['/sistema/inicial']);
   }
 }

@@ -19,7 +19,7 @@ const routes: Routes = [
       { path: 'inicial', component: PantallaPrincipalComponent },
     ]
   },
-  { path: '**', redirectTo: 'sistema', pathMatch: 'full' }
+  // { path: '**', redirectTo: 'sistema', pathMatch: 'full' }
 
 
 ]
