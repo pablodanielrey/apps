@@ -1,8 +1,8 @@
 
 <div class="contenido">
     <div class="contenedorApps">
-      <button  class="btn" mat-button *ngFor="let item of items">
-        <div class="subBtn" (click)='abrir(item)'>
+      <button  class="btn" mat-button *ngFor="let item of items" (click)="abrir(item)">
+        <div class="subBtn">
           <img [src]="item.img" class='logoSistema'>
           <span class="textBtn">{{ item.nombre }}</span>
         </div>
