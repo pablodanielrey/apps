@@ -11,6 +11,7 @@ import { SistemaComponent } from './sistema/sistema.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { LoaderComponent } from './loader/loader.component';
+import { ToogleFullscreenDirective } from './toogle-fullscreen.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LoaderComponent } from './loader/loader.component';
     SistemaComponent,
     FooterComponent,
     HeaderComponent,
-    LoaderComponent
+    LoaderComponent,
+    ToogleFullscreenDirective
   ],
   imports: [
     BrowserModule,
