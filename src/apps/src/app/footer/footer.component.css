@@ -53,3 +53,28 @@
   font-weight: 200;
 
 }
+
+.footerAlternativo {
+  display: none;
+}
+
+.logoFCE {
+  max-width: 230px;
+}
+
+@media screen and (min-width: 719px) {
+
+}
+
+@media screen and (max-width: 718px) {
+  .contenidoFooter {
+    display: none;
+  }
+  .footerAlternativo {
+    display: block;
+      padding-left:  50px;
+      padding-top: 50px;
+  }
+
+
+}
