@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OAuthService } from 'angular-oauth2-oidc';
 
 @Component({
   selector: 'app-loader',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private oauthService: OAuthService) {
+  }
 
   ngOnInit() {
+  }
+
+  acceder() {
+    this.oauthService.initImplicitFlow();
   }
 
 }

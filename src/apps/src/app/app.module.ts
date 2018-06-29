@@ -34,12 +34,13 @@ import { ToogleFullscreenDirective } from './toogle-fullscreen.directive';
     BrowserModule,
     AppRoutingModule,
     AppMenuModule,
+    HttpClientModule,
     MaterialModule,
     OAuthModule.forRoot()
   ],
   providers: [
     OidpGuard,
-    { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true }     
+    { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true }
   ],
   bootstrap: [AppComponent]
 })

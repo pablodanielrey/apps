@@ -30,11 +30,24 @@ import { NullValidationHandler, JwksValidationHandler } from 'angular-oauth2-oid
 })
 export class AppComponent {
 
-  constructor(private router: Router) {
+  constructor(private oauthService: OAuthService, private router: Router) {
     this.configureWithNewConfigApi();
   }
 
   private configureWithNewConfigApi() {
-    // this.router.navigate(['/sistema/inicial']);
+    console.log('configurando oauth2');
+    this.oauthService.configure(authConfig);
+    this.oauthService.tokenValidationHandler = new NullValidationHandler();
+    this.oauthService.events.subscribe(e => {
+        console.debug('oauth/oidc event', e);
+    })
+    console.log('tratando de loguearme');
+    this.oauthService.tryLogin();
+    if (this.oauthService.getAccessToken() == null) {
+      this.router.navigate(['/loader']);
+    } else {
+      this.router.navigate(['/sistema/inicial']);
+    }
+
   }
 }
