@@ -18,6 +18,10 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
+            "i18nFile": "src/messages.xlf",
+            "i18nLocale": "es",
+            "i18nFormat": "xlf",
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -41,6 +45,9 @@
               "extractCss": true,
               "namedChunks": false,
               "aot": true,
+              "i18nFile": "src/messages.xlf",
+              "i18nLocale": "es",
+              "i18nFormat": "xlf",
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
