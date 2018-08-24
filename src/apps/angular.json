@@ -51,6 +51,70 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
+            },
+            "econo": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.econo.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "i18nFile": "src/messages.xlf",
+              "i18nLocale": "es",
+              "i18nFormat": "xlf",
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            },
+            "presi": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.presi.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "i18nFile": "src/messages.xlf",
+              "i18nLocale": "es",
+              "i18nFormat": "xlf",
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
+            },
+            "local": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.local.ts"
+                }
+              ]
+            },
+            "local-econo": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.econo.ts"
+                }
+              ]
+            },
+            "local-presi": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.presi.ts"
+                }
+              ]
             }
           }
         },
@@ -62,6 +126,21 @@
           "configurations": {
             "production": {
               "browserTarget": "apps:build:production"
+            },
+            "local": {
+              "browserTarget": "apps:build:local"
+            },
+            "econo": {
+              "browserTarget": "apps:build:econo"
+            },
+            "local-econo": {
+              "browserTarget": "apps:build:local-econo"
+            },
+            "presi": {
+              "browserTarget": "apps:build:presi"
+            },
+            "local-presi": {
+              "browserTarget": "apps:build:local-presi"
             }
           }
         },
