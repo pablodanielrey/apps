@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-pantalla-principal',
@@ -11,8 +12,8 @@ import { Router } from '@angular/router';
 export class PantallaPrincipalComponent implements OnInit {
 
   items = [
-    {'nombre': 'Gelis', 'link':'https://gelis.econo.unlp.edu.ar', 'img':'https://gelis.econo.unlp.edu.ar/assets/img/logo.png'},
-    {'nombre': 'Asistencia', 'link': 'https://assistance.econo.unlp.edu.ar', 'img':'https://assistance.econo.unlp.edu.ar/assets/img/logo.png'}
+    {'nombre': 'Gelis', 'link':environment.linkGelis, 'img':environment.linkGelisLogo},
+    {'nombre': 'Asistencia', 'link': environment.linkAsistencia, 'img':environment.linkAsistenciaLogo}
   ];
 
   constructor(private router:Router) { }
