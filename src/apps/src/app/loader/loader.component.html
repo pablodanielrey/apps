@@ -1,49 +1,49 @@
 <div class="loader">
     <div class="header">
-        <div>Aplicaciones | FCE</div>
+        <div>{{loaderHeader}}</div>
     </div>
     <div class="contenedorSistema">
       <div class="contenedorAcceso">
           <div>
               <div class="contenedorTitulo">
                   <div><img class="logoSistema" src="/assets/img/logo.png"></div>
-                  <div class="titulo"> Aplicaciones FCE</div>
+                  <div class="titulo"> {{loaderTitle}}</div>
               </div>
-              <div class="subTitulo">Sistema de Acceso Único de la  Facultad de Ciencias Económicas | UNLP. </div>
+              <div class="subTitulo">{{loaderSubTitle}} </div>
               <div> <button class="btnAcceder" (click)="acceder()"> ACCEDER  </button> </div>
           </div>
 
           <div>
-            <img class="logoFce" src="/assets/img/logo_fce.png">
+            <img class="logoFce" src={{loaderLogo}}>
           </div>
       </div>
         <div class="infoSistema">
             <div class="bloqueInfo">
               <div><mat-icon class="iconos">person_outline</mat-icon></div>
-              <div class="tituloInfo">Acceso Único</div>
-              <div class="infoBloque">Unificación del acceso a los sistemas informáticos bajo un único usuario y contraseña.</div>
+              <div class="tituloInfo">{{loaderInfo1Title}}</div>
+              <div class="infoBloque">{{loaderInfo1Text}}</div>
             </div>
             <div class="bloqueInfo">
               <div><mat-icon class="iconos">apps</mat-icon></div>
-              <div class="tituloInfo">Aplicaciones</div>
-              <p class="infoBloque">Fácil y rápido acceso a los sistemas informáticos de la Facultad de Ciencias Económicas - UNLP.</p>
+              <div class="tituloInfo">{{loaderInfo2Title}}</div>
+              <p class="infoBloque">{{loaderInfo2Text}}</p>
             </div>
             <div class="bloqueInfo">
               <div><mat-icon class="iconos">list</mat-icon></div>
-              <div class="tituloInfo">Accesos y Permisos</div>
-              <div class="infoBloque">Gestión de roles y permisos para el acceso a las aplicaciones. </div>
+              <div class="tituloInfo">{{loaderInfo3Title}}</div>
+              <div class="infoBloque">{{loaderInfo3Text}}</div>
             </div>
             <div class="bloqueInfo">
               <!-- <div><mat-icon class="iconos">art_track</mat-icon></div>
               <div class="tituloInfo">Datos Personales</div> -->
-              <img class="logoDitesi" src="/assets/img/ditesi.png">
-              <div class="infoBloque">Dirección de tecnologías y Sistemas Informáticos | FCE - UNLP </div>
+              <img class="logoDitesi" src={{loaderInfo4Title}}>
+              <div class="infoBloque">{{loaderInfo4Text}}</div>
 
             </div>
         </div>
     </div>
     <div class="footer">
-      <div class="footerPrincipal">DiTESI | Dirección de tecnologías y Sistemas Informáticos | Facultad de Ciencias Económicas | UNLP | Calle 6 Nº 777</div>
-      <div class="footerAlternativo">  DiTESI | Dirección de tecnologías y Sistemas Informáticos | FCE</div>
+      <div class="footerPrincipal">{{loaderFooter1}}</div>
+      <div class="footerAlternativo">{{loaderFooter2}}</div>
     </div>
 </div>
