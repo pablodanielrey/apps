@@ -6,15 +6,14 @@
 export const environment = {
   production: true,
   assistanceApiUrl: 'https://api.econo.unlp.edu.ar/assistance/api/v1.0',
-  oidp_issuer: 'https://oidp.econo.unlp.edu.ar',
-  userinfoEndpoint: 'https://oidp.econo.unlp.edu.ar/userinfo',
-  loginUrl: 'https://oidp.econo.unlp.edu.ar/oauth2/auth',
-  logoutUrl: 'https://consent.econo.unlp.edu.ar/logout',
+  oidp_issuer: 'https://oidc.econo.unlp.edu.ar',
+  userinfoEndpoint: 'https://oidc.econo.unlp.edu.ar/userinfo',
+  loginUrl: 'https://oidc.econo.unlp.edu.ar/oauth2/auth',
+  logoutUrl: 'https://login.econo.unlp.edu.ar/logout',
   linkGelis: 'https://gelis.econo.unlp.edu.ar',
   linkAsistencia: 'https://asistencia.econo.unlp.edu.ar',
   linkGelisLogo: 'https://gelis.econo.unlp.edu.ar/assets/img/logo.png',
-  linkAsistenciaLogo: 'https://assistance.econo.unlp.edu.ar/assets/img/logo.png',
-  // tokenEndpoint: 'https://oidp.econo.unlp.edu.ar/oauth2/auth'
+  linkAsistenciaLogo: 'https://assistance.econo.unlp.edu.ar/assets/img/logo.png'
 
 
 };
