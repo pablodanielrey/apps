@@ -4,7 +4,7 @@ export const environment = {
   oidp_issuer: 'https://oidc.econo.unlp.edu.ar',
   userinfoEndpoint: 'https://oidc.econo.unlp.edu.ar/userinfo',
   loginUrl: 'https://oidc.econo.unlp.edu.ar/oauth2/auth',
-  logoutUrl: 'https://login.econo.unlp.edu.ar/logout',
+  logoutUrl: 'https://oidc.econo.unlp.edu.ar/oauth2/auth/sessions/login/revoke',
   linkGelis: 'https://gelis.econo.unlp.edu.ar',
   linkAsistencia: 'https://asistencia.econo.unlp.edu.ar',
   linkGelisLogo: 'https://gelis.econo.unlp.edu.ar/assets/img/logo.png',

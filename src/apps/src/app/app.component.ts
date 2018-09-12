@@ -6,6 +6,7 @@ import { AuthConfig } from 'angular-oauth2-oidc';
 
 import { environment } from '../environments/environment';
 
+/*
 export const authConfig: AuthConfig = {
   issuer: environment.oidp_issuer,
   redirectUri: window.location.origin,
@@ -20,6 +21,15 @@ export const authConfig: AuthConfig = {
   scope: 'openid profile email',
   showDebugInformation: true
 }
+*/
+export const authConfig: AuthConfig = {
+  issuer: environment.oidp_issuer,
+  redirectUri: window.location.origin,
+  clientId: 'apps-ui',
+  scope: 'openid profile email',
+  showDebugInformation: true
+}
+
 import { OAuthService } from 'angular-oauth2-oidc';
 import { NullValidationHandler, JwksValidationHandler } from 'angular-oauth2-oidc';
 
@@ -44,7 +54,7 @@ export class AppComponent {
         console.debug('oauth/oidc event', e);
     })
     console.log('tratando de loguearme');
-    this.oauthService.tryLogin();
+    this.oauthService.loadDiscoveryDocumentAndTryLogin();
     if (this.oauthService.getAccessToken() == null) {
       this.router.navigate(['/loader']);
     } else {
