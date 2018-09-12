@@ -54,12 +54,13 @@ export class AppComponent {
         console.debug('oauth/oidc event', e);
     })
     console.log('tratando de loguearme');
-    this.oauthService.loadDiscoveryDocumentAndTryLogin();
-    if (this.oauthService.getAccessToken() == null) {
-      this.router.navigate(['/loader']);
-    } else {
-      this.router.navigate(['/sistema/inicial']);
-    }
+    this.oauthService.loadDiscoveryDocumentAndTryLogin().then(() => {
+      if (this.oauthService.getAccessToken() == null) {
+        this.router.navigate(['/loader']);
+      } else {
+        this.router.navigate(['/sistema/inicial']);
+      }
+    });
 
   }
 }
