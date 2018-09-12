@@ -1,7 +1,7 @@
 export const environment = {
   production: false,
   assistanceApiUrl: 'https://api.econo.unlp.edu.ar/assistance/api/v1.0',
-  oidp_issuer: 'https://oidc.econo.unlp.edu.ar',
+  oidp_issuer: 'https://oidc.econo.unlp.edu.ar/',
   userinfoEndpoint: 'https://oidc.econo.unlp.edu.ar/userinfo',
   loginUrl: 'https://oidc.econo.unlp.edu.ar/oauth2/auth',
   logoutUrl: 'https://oidc.econo.unlp.edu.ar/oauth2/auth/sessions/login/revoke',
